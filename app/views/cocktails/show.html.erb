@@ -2,6 +2,7 @@
 <p>Find me in app/views/cocktail/show.html.erb</p>
 <li>
 <%= @cocktail.name %>
+<%= cl_image_tag @cocktail.photo if @cocktail.photo.present? %>
 </li>
 
 <% @cocktail.doses.each do |dose| %>
